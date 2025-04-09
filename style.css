@@ -1,0 +1,81 @@
+html {
+    font-family: calibri;
+    background-color: rgb(209, 252, 255); 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+     /* todo: this*/ 
+     cursor: pointer;
+}
+
+#home {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+h1 {
+    display: inline;
+    position: relative;
+    left: 40%;
+}
+
+#home_link {
+    position: fixed;
+    margin: 10px;
+    right: 15px;
+}
+
+/*? main */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding: 50px;
+}
+
+.cards {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.likes {
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+    position: relative;
+    bottom: -25%;
+    left: 45%;
+    cursor: pointer;
+}
+
+
+
+.page_viewer {
+    background-color: rgba(128, 128, 128, 0.181);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px;
+    width: 100px;
+}
+
+.likes:active {
+    animation: Likeing 0.5s ease-out forwards 1 normal;
+}
+
+@keyframes Likeing {
+    0% {transform: scale(1);}
+    25% {transform: scale(0.5);}
+    100% {transform: scale(1);}
+}
