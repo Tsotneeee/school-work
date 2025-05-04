@@ -1,0 +1,32 @@
+html {
+    background-color: rgb(209, 252, 255);
+    font-family: calibri;
+}
+
+h1 {
+    display: inline;
+    position: relative;
+    left: 40%;
+}
+
+p {
+    margin: 10px 30px;
+    font-size: larger;
+}
+
+#home_link {
+    position: fixed;
+    margin: 10px;
+    right: 15px;
+}
+
+#home {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        left: 10%;
+    }
+}

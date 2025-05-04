@@ -9,7 +9,6 @@ a {
 }
 
 a:hover {
-     /* todo: this*/ 
      cursor: pointer;
 }
 
@@ -41,12 +40,14 @@ main {
 }
 
 .cards {
-    border: 1px solid black;
+    border: 2px solid rgba(196, 92, 0, 0.949);
     border-radius: 10px;
     width: 150px;
     height: 200px;
     text-align: center;
     padding: 20px;
+    background-color: rgba(255, 236, 203, 0.744);
+    box-shadow: 0 0 2px rgba(46, 46, 46, 0.874);
 }
 
 .likes {
@@ -54,7 +55,7 @@ main {
     border: none;
     font-size: x-large;
     position: relative;
-    bottom: -25%;
+    bottom: -55%;
     left: 45%;
     cursor: pointer;
 }
@@ -78,4 +79,21 @@ main {
     0% {transform: scale(1);}
     25% {transform: scale(0.5);}
     100% {transform: scale(1);}
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .cards {
+        width: 80%;
+        height: 200px;
+    }
+
+    h1 {
+        left: 10%;
+    }
 }
